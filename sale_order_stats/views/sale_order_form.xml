@@ -1,0 +1,46 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <data>
+        <record id="sale_order_stats_view_order_form" model="ir.ui.view">
+            <field name="name">sale_order_stats.view_order_form</field>
+            <field name="model">sale.order</field>
+            <field name="priority">100</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='sale_margin_grp']" position="replace" />
+
+                <xpath expr="//sheet" position="before">
+                    <sheet class="sale_order_stats oe_read_only">
+                        <div>
+                            <label for="x_amount_untaxed" />
+                            <field readonly="1" name="x_amount_untaxed" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        </div>
+
+                        <div>
+                            <label for="margin" />
+                            <field readonly="1" name="margin" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        </div>
+
+                        <div>
+                            <label for="x_margin_rate" />
+                            <field readonly="1" name="x_margin_rate" /> %
+                        </div>
+
+                        <div>
+                            <label for="x_markup_rate" />
+                            <field readonly="1" name="x_markup_rate" /> %
+                        </div>
+                    </sheet>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
+
+
+

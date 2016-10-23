@@ -1,0 +1,45 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_stats
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20160726\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-22 13:39+0000\n"
+"PO-Revision-Date: 2016-10-22 21:40+0800\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: fr\n"
+"X-Generator: Poedit 1.8.9\n"
+
+#. module: sale_order_stats
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_margin_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_x_margin_rate
+msgid "Margin rate"
+msgstr "Taux de marge"
+
+#. module: sale_order_stats
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_markup_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_x_markup_rate
+msgid "Markup rate"
+msgstr "Taux de marque"
+
+#. module: sale_order_stats
+#: model:ir.model,name:sale_order_stats.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: sale_order_stats
+#: model:ir.model,name:sale_order_stats.model_sale_report
+msgid "Sales Orders Statistics"
+msgstr "Statistiques de vente"
+
+#. module: sale_order_stats
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_amount_untaxed
+msgid "Turnover"
+msgstr "Chiffre d'affaire"

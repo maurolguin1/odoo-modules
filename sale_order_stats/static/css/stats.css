@@ -1,0 +1,37 @@
+/**
+ * Copyright 2016 Critech Limited (contact@critech-services.com)
+ * License MIT (https://opensource.org/licenses/mit-license.php)
+ */
+
+.openerp .oe_application .sale_order_stats {
+    box-shadow: none;
+    border-bottom-width: 0;
+}
+
+.openerp .oe_application .sale_order_stats .oe_form_sheet {
+    min-height: inherit;
+    border-bottom-width: 1px;
+    margin-bottom: -15px;
+}
+
+.openerp .oe_application .sale_order_stats .oe_form_sheet div {
+    display: inline-block;
+    text-align: center;
+    font-size: 19px;
+    width: 21%;
+    margin: 0 2%;
+    padding: 10px 0;
+    background: url('/web/static/src/img/form_sheetbg.png');
+}
+
+.openerp .oe_application .sale_order_stats .oe_form_sheet div label {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    color: #999;
+}
+
+.openerp .oe_application .sale_order_stats .oe_form_sheet div span {
+    display: inline;
+    font-weight: bold;
+}
