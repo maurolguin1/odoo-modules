@@ -1,0 +1,18 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <template id="report_saleorder_document_image" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//th[1]" position="before">
+            <th></th>
+        </xpath>
+
+        <xpath expr="//td[1]" position="before">
+            <td>
+                <span t-field="l.product_id.image_medium" t-field-options='{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;img-rounded&quot;}' />
+            </td>
+        </xpath>
+    </template>
+</openerp>
