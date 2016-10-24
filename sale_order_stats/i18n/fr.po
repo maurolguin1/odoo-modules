@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 9.0c-20160726\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-22 13:39+0000\n"
-"PO-Revision-Date: 2016-10-22 21:40+0800\n"
+"POT-Creation-Date: 2016-10-24 11:02+0000\n"
+"PO-Revision-Date: 2016-10-24 19:22+0800\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,16 +18,36 @@ msgstr ""
 "X-Generator: Poedit 1.8.9\n"
 
 #. module: sale_order_stats
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_x_cost_subtotal
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_cost_subtotal
+msgid "Cost subtotal"
+msgstr "Coût"
+
+#. module: sale_order_stats
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_x_margin_amount
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_margin_amount
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_x_margin_amount
+msgid "Margin amount"
+msgstr "Marge"
+
+#. module: sale_order_stats
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_x_margin_rate
 #: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_margin_rate
 #: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_x_margin_rate
 msgid "Margin rate"
 msgstr "Taux de marge"
 
 #. module: sale_order_stats
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_x_markup_rate
 #: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_markup_rate
 #: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_x_markup_rate
 msgid "Markup rate"
 msgstr "Taux de marque"
+
+#. module: sale_order_stats
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_x_purchase_price
+msgid "Purchase price"
+msgstr "Prix d’achat"
 
 #. module: sale_order_stats
 #: model:ir.model,name:sale_order_stats.model_sale_order
@@ -35,9 +55,14 @@ msgid "Sales Order"
 msgstr "Bon de commande"
 
 #. module: sale_order_stats
+#: model:ir.model,name:sale_order_stats.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Ligne de bons de commande"
+
+#. module: sale_order_stats
 #: model:ir.model,name:sale_order_stats.model_sale_report
 msgid "Sales Orders Statistics"
-msgstr "Statistiques de vente"
+msgstr "Statistiques sur les commandes de ventes"
 
 #. module: sale_order_stats
 #: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_amount_untaxed

@@ -2,5 +2,5 @@
 # Copyright 2016 Critech Limited (contact@critech-services.com)
 # License MIT (https://opensource.org/licenses/mit-license.php)
 
-from . import sale_order
+from . import sale_order, sale_order_line
 

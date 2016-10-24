@@ -11,12 +11,12 @@
     'version': '9.0.1.0.0',
     'license': 'Other OSI approved licence',
     'depends': [
-        'sale',
-        'sale_margin',
+        'sale'
     ],
     'data': [
         'security/ir.model.access.csv',
-        'views/sale_order_form.xml',
+        'views/inherit_sale.view_form.xml',
+        'views/inherit_sale.view_res_config.xml',
         'views/static.xml',
     ],
     'installable': True,
