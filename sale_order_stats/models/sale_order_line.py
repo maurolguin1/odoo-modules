@@ -47,9 +47,16 @@ class SaleOrderLine(models.Model):
 
     @api.onchange('product_id')
     def _init_purchase_price(self):
+        if not self.product_id:
+            return
+
+        if not self.order_id.pricelist_id or not self.product_uom:
+            self.x_purchase_price = self.product_id.standard_price
+            return
+
+        purchase_price = self.product_id.standard_price
         company_currency = self.env.user.company_id.currency_id
         pricelist_currency = self.order_id.pricelist_id.currency_id
-        purchase_price = self.product_id.standard_price
 
         if self.product_uom != self.product_id.uom_id:
             purchase_price = self.env['product.uom']._compute_price(self.product_id.uom_id.id, purchase_price, to_uom_id=self.product_uom.id)
@@ -58,6 +65,4 @@ class SaleOrderLine(models.Model):
         ctx['date'] = self.order_id.date_order
 
         self.x_purchase_price = company_currency.with_context(ctx).compute(purchase_price, pricelist_currency, round=False)
-
-
 
