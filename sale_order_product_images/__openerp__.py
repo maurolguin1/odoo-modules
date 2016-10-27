@@ -3,7 +3,7 @@
 # License MIT (https://opensource.org/licenses/mit-license.php)
 
 {
-    'name': 'Sale Reports Product Images',
+    'name': 'Sale Order Product Images',
     'summary': 'Display the product image in sale reports',
     'author': 'Critech Limited',
     'website': 'http://www.critech-services.com',
