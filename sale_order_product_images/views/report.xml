@@ -11,7 +11,11 @@
 
         <xpath expr="//td[1]" position="before">
             <td>
-                <span t-field="l.product_id.image_medium" t-field-options='{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;img-rounded&quot;}' />
+                <div
+                    class="product_image"
+                    t-field="l.product_id.image_medium"
+                    t-field-options='{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;img-rounded&quot;}'
+                />
             </td>
         </xpath>
     </template>
