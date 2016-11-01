@@ -1,0 +1,31 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp noupdate="1">
+    <record id="stock_picking_nomenclature_lot_prefix" model="ir.config_parameter">
+        <field name="key">stock_picking_nomenclature.lot.prefix</field>
+        <field name="value">%(vendor)s-</field>
+    </record>
+
+    <record id="stock_picking_nomenclature_lot_suffix_active" model="ir.config_parameter">
+        <field name="key">stock_picking_nomenclature.lot.suffix.active</field>
+        <field name="value" eval="True" />
+    </record>
+
+    <record id="stock_picking_nomenclature_lot_suffix_sequence_code" model="ir.config_parameter">
+        <field name="key">stock_picking_nomenclature.lot.suffix.sequence_code</field>
+        <field name="value">stock_picking_nomenclature.lot.suffix_sequence</field>
+    </record>
+
+    <record id="stock_picking_nomenclature_serial_prefix" model="ir.config_parameter">
+        <field name="key">stock_picking_nomenclature.serial.prefix</field>
+        <field name="value">%(vendor)s-%(product)s-%(sequence)s</field>
+    </record>
+
+    <record id="stock_picking_nomenclature_serial_suffix_sequence_code" model="ir.config_parameter">
+        <field name="key">stock_picking_nomenclature.serial.suffix.sequence_code</field>
+        <field name="value">stock.lot.serial</field>
+    </record>
+</openerp>

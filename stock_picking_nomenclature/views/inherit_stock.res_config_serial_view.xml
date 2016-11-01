@@ -1,0 +1,59 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <data>
+        <record id="stock_picking_nomenclature_res_config_serial_view" model="ir.ui.view">
+            <field name="name">stock_picking_nomenclature.res_config_serial_view</field>
+            <field name="model">stock.config.settings</field>
+            <field name="priority">101</field>
+            <field name="inherit_id" ref="stock_picking_nomenclature_res_config_lot_view" />
+
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='stock_picking_nomenclature_lot']" position="after">
+                    <group name="stock_picking_nomenclature_serial" string="Picking Nomenclature : Serial number">
+                        <label for="serial_prefix" />
+                        <div>
+                            <field name="serial_prefix" nolabel="1" />
+                            <p>
+                                Use %%(vendor)s for supplier internal reference <br />
+                                Use %%(product)s for product code <br />
+                                Use %%(sequence)s for sequence number
+                            </p>
+                        </div>
+
+                        <label for="serial_suffix_sequence_code" />
+                        <div>
+                            <field name="serial_suffix_sequence_code" nolabel="1" />
+                            <p>Sequence code to use for the suffix</p>
+                        </div>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="stock_picking_nomenclature_res_config_serial_view_rules" model="ir.ui.view">
+            <field name="name">stock_picking_nomenclature.res_config_serial_view.rules</field>
+            <field name="model">stock.config.settings</field>
+            <field name="priority">101</field>
+            <field name="inherit_id" ref="stock_picking_nomenclature_res_config_serial_view" />
+
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='stock_picking_nomenclature_serial']" position="attributes">
+                     <attribute name="attrs">
+                         {
+                            'invisible': [
+                                ('group_stock_production_lot','=', False)
+                            ]
+                         }
+                     </attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
+
+
+

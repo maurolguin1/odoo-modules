@@ -1,0 +1,14 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp noupdate="1">
+    <record id="stock_picking_nomenclature_lot_suffix_sequence" model="ir.sequence">
+        <field name="name">Stock Picking Nomenclature : Lot Suffix</field>
+        <field name="code">stock_picking_nomenclature.lot.suffix_sequence</field>
+        <field name="padding">7</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+</openerp>

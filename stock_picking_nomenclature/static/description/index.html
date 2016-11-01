@@ -1,0 +1,135 @@
+<section class="oe_container">
+    <div class="oe_row">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Stock picking nomenclature</h2>
+            <h3 class="oe_slogan">Generate name of lot or serial number during picking operation</h3>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_mt64">
+    <div class="oe_row">
+        <div class="oe_span6">
+            <h4>Automatic Lot Name</h4>
+
+            <p class="text-justify">
+                During the picking operation of purchased products, you can easily setup lot with inline editing.
+                This module improve this feature with enabling simple nomenclature for pre-populate lot name's field.
+            </p>
+            <p class="text-justify">
+                You can use vendor reference and/or product code as a prefix.
+                If reference or code are not defined, a slugify version of the name is used.
+            </p>
+        </div>
+
+        <div class="oe_span6">
+            <div class="oe_bg_img">
+                <a href="/partner_ref_sequence/static/description/lot-prefix.png" target="_blank">
+                    <img src="lot-prefix.png" class="oe_picture oe_screenshot" />
+                </a>
+            </div>
+            <p class="text-center">
+                Vendor slugify name and product code
+            </p>
+        </div>
+    </div>
+
+    <div class="oe_row oe_mt48">
+        <div class="oe_span6">
+            <div class="oe_bg_img">
+                <a href="/partner_ref_sequence/static/description/lot-suffix.png" target="_blank">
+                    <img src="lot-suffix.png" class="oe_picture oe_screenshot" />
+                </a>
+            </div>
+            <p class="text-center">
+                Suffix append after picking validation
+            </p>
+        </div>
+
+        <div class="oe_span6">
+            <p class="text-justify">
+                In module settings, you can also setup a sequence to use for append a suffix in your lot name.
+                This append after you validate the picking operation ; then you can use a non_gap sequence if you need.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section class="oe_container oe_mt64">
+    <div class="oe_row">
+        <div class="oe_span6">
+            <h4>Automatic Serial Number</h4>
+
+            <p class="text-justify">
+                During the picking operation of purchased products with serial, a serial
+                number is automatically generated according to your configuration settings.
+            </p>
+
+            <p class="text-justify">
+                This serial number can contain vendor reference, product reference
+                and sequence number depending of your settings.
+            </p>
+        </div>
+
+        <div class="oe_span6">
+            <div class="oe_bg_img">
+                <a href="/partner_ref_sequence/static/description/serials.png" target="_blank">
+                    <img src="serials.png" class="oe_picture oe_screenshot" />
+                </a>
+            </div>
+            <p class="text-center">
+                Serial number generation
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section class="oe_container oe_mt64">
+    <div class="oe_row">
+        <div class="oe_span6">
+            <h4>Settings</h4>
+
+            <p class="text-justify">
+                Module settings are available in Inventory > Settings ; only if
+                <strong>Lots and Serial Numbers tracking</strong> is activate.
+            </p>
+        </div>
+
+        <div class="oe_span6">
+            <div class="oe_bg_img">
+                <a href="/partner_ref_sequence/static/description/settings.png" target="_blank">
+                    <img src="settings.png" class="oe_picture oe_screenshot" />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section class="oe_container oe_mt32">
+    <div class="oe_row">
+        <div class="oe_span12">
+            <h4>Information</h4>
+            <p>
+                This module requires <a href="https://pypi.python.org/pypi/python-slugify" target="_blank">python-slugify</a> Python package.
+                You can install it using pip: <code>pip install python-slugify</code>
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<section class="oe_container oe_mt32">
+    <div class="oe_row">
+        <div class="oe_span12 text-center">
+            <p>Copyright 2016 Critech Limited <a href="mailto:contact@critech-services.com">contact@critech-services.com</a></p>
+            <p><img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000" alt="MIT License" /></p>
+        </div>
+    </div>
+</section>
