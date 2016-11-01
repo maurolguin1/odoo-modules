@@ -1,0 +1,22 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp noupdate="1">
+    <record id="partner_client_ref" model="ir.sequence">
+        <field name="name">Partner Reference: Client</field>
+        <field name="code">partner.client_ref</field>
+        <field name="implementation">no_gap</field>
+        <field name="prefix">C</field>
+        <field name="padding">6</field>
+    </record>
+
+    <record id="partner_vendor_ref" model="ir.sequence">
+        <field name="name">Partner Reference: Vendor</field>
+        <field name="code">partner.vendor_ref</field>
+        <field name="implementation">no_gap</field>
+        <field name="prefix">V</field>
+        <field name="padding">3</field>
+    </record>
+</openerp>

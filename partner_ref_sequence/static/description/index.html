@@ -1,0 +1,71 @@
+<section class="oe_container">
+    <div class="oe_row">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Partner Reference Sequence</h2>
+            <h3 class="oe_slogan">Setup sequence for partner internal reference</h3>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_mt32">
+    <div class="oe_row">
+        <div class="oe_span12">
+            <p>
+                When create a partner, if no internal reference is defined by the user, an internal reference
+                is picked from a sequence depending of the partner type : vendor or client.
+            </p>
+            <p>
+                If the partner is a vendor, we use the next sequence of vendor as internal reference ;
+                even if it also a client. If the partner is a client, we use the next sequence of client
+                as internal reference.
+            </p>
+            <p>
+                <em>Note:</em> Only <strong>company</strong> partner are concerned by this module, other
+                res.partner are exclude from the scope of this module.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_mt32">
+    <div class="oe_row">
+        <div class="oe_span12">
+            <h2 class="oe_slogan oe_mb32">Custom sequence number</h2>
+        </div>
+    </div>
+
+    <div class="oe_row">
+        <div class="oe_span6">
+            <div class="oe_bg_img">
+                <a href="/partner_ref_sequence/static/description/partner-ref-sequence-vendor.png" target="_blank">
+                    <img src="partner-ref-sequence-vendor.png" class="oe_picture oe_screenshot" />
+                </a>
+            </div>
+            <p class="text-center">
+                Sequence for vendors
+            </p>
+        </div>
+
+        <div class="oe_span6">
+            <div class="oe_bg_img">
+                <a href="/partner_ref_sequence/static/description/partner-ref-sequence-client.png" target="_blank">
+                    <img src="partner-ref-sequence-client.png" class="oe_picture oe_screenshot" />
+                </a>
+            </div>
+            <p class="text-center">
+                Sequence for clients
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<section class="oe_container oe_mt32">
+    <div class="oe_row">
+        <div class="oe_span12 text-center">
+            <p>Copyright 2016 Critech Limited <a href="mailto:contact@critech-services.com">contact@critech-services.com</a></p>
+            <p><img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000" alt="MIT License" /></p>
+        </div>
+    </div>
+</section>
