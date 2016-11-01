@@ -1,0 +1,91 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_picking_nomenclature
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20160726\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-01 12:28+0000\n"
+"PO-Revision-Date: 2016-11-01 20:31+0800\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: fr\n"
+"X-Generator: Poedit 1.8.9\n"
+
+#. module: stock_picking_nomenclature
+#: model:ir.model,name:stock_picking_nomenclature.model_stock_production_lot
+msgid "Lot/Serial"
+msgstr "Lot/N° série"
+
+#. module: stock_picking_nomenclature
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_lot_view
+msgid "Picking Nomenclature : Lot name"
+msgstr "Nomenclature à la réception : Nom de lot"
+
+#. module: stock_picking_nomenclature
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_serial_view
+msgid "Picking Nomenclature : Serial number"
+msgstr "Nomenclature à la réception : Numéro de série"
+
+#. module: stock_picking_nomenclature
+#: model:ir.model.fields,field_description:stock_picking_nomenclature.field_stock_config_settings_lot_prefix
+#: model:ir.model.fields,field_description:stock_picking_nomenclature.field_stock_config_settings_serial_prefix
+msgid "Prefix"
+msgstr "Préfixe"
+
+#. module: stock_picking_nomenclature
+#: model:ir.model.fields,field_description:stock_picking_nomenclature.field_stock_config_settings_lot_suffix_sequence_code
+#: model:ir.model.fields,field_description:stock_picking_nomenclature.field_stock_config_settings_serial_suffix_sequence_code
+msgid "Sequence code to use"
+msgstr "Code de la séquence à utiliser"
+
+#. module: stock_picking_nomenclature
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_lot_view
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_serial_view
+msgid "Sequence code to use for the suffix"
+msgstr "Code de la séquence à utiliser pour le suffixe"
+
+#. module: stock_picking_nomenclature
+#: model:ir.model,name:stock_picking_nomenclature.model_stock_pack_operation_lot
+msgid "Specifies lot/serial number for pack operations that need it"
+msgstr "Spécifie le lot/numéro de série pour les colisages qui le nécessitent"
+
+#. module: stock_picking_nomenclature
+#: model:ir.model.fields,field_description:stock_picking_nomenclature.field_stock_config_settings_lot_suffix_active
+msgid "Suffix sequence"
+msgstr "Séquence pour le suffixe"
+
+#. module: stock_picking_nomenclature
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_lot_view
+msgid ""
+"Use %(vendor)s for supplier internal reference <br/>\n"
+"                                Use %(product)s for product code"
+msgstr ""
+"Utiliser %(vendor)s pour la référence interne du fournisseur <br/>\n"
+"                                Utiliser %(product)s pour le code produit"
+
+#. module: stock_picking_nomenclature
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_serial_view
+msgid ""
+"Use %(vendor)s for supplier internal reference <br/>\n"
+"                                Use %(product)s for product code <br/>\n"
+"                                Use %(sequence)s for sequence number"
+msgstr ""
+"Utiliser %(vendor)s pour la référence interne du fournisseur <br/>\n"
+"                                Utiliser %(product)s pour le code produit\n"
+"                                Utiliser %(sequence)s pour le numéro de séquence"
+
+#. module: stock_picking_nomenclature
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_lot_view
+msgid "Use a sequence as a lot name suffix"
+msgstr "Suffixer le nom de lot via une séquence"
+
+#. module: stock_picking_nomenclature
+#: model:ir.model,name:stock_picking_nomenclature.model_stock_config_settings
+msgid "stock.config.settings"
+msgstr "stock.config.settings"
