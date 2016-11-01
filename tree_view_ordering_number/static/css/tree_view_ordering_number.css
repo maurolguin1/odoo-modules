@@ -21,7 +21,7 @@ table.oe_list_content tbody.ui-sortable td.oe_list_field_handle .oe_list_handle:
     margin-top: 2px;
 
     font-size: 10px;
-    color: #999;
+    color: #ccc;
 }
 
 table.oe_list_content tbody.ui-sortable td.oe_list_field_handle .oe_list_handle:after {
@@ -34,6 +34,6 @@ table.oe_list_content tbody.ui-sortable td.oe_list_field_handle .oe_list_handle:
 
     font-size: 14px;
     font-weight: bold;
-    color: #999;
+    color: #666;
 }
 
