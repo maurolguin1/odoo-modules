@@ -7,7 +7,7 @@
     <data>
         <template id="sale_order_stats_css" name="sale_order_stats.css" inherit_id="web.assets_backend">
             <xpath expr="." position="inside">
-                <link rel="stylesheet" href="/sale_order_stats/static/css/stats.css" />
+                <link rel="stylesheet" href="/sale_order_stats/static/css/sale_order_stats.css" />
             </xpath>
         </template>
     </data>
