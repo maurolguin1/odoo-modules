@@ -1,0 +1,39 @@
+/**
+ * Copyright 2016 Critech Limited (contact@critech-services.com)
+ * License MIT (https://opensource.org/licenses/mit-license.php)
+ */
+
+table.oe_list_content tbody.ui-sortable {
+    counter-reset: line-counter;
+}
+
+table.oe_list_content tbody.ui-sortable td.oe_list_field_handle {
+    position: relative;
+    height: 40px;
+}
+
+table.oe_list_content tbody.ui-sortable td.oe_list_field_handle .oe_list_handle:before {
+    content: "\f047";
+
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    margin-top: 2px;
+
+    font-size: 10px;
+    color: #999;
+}
+
+table.oe_list_content tbody.ui-sortable td.oe_list_field_handle .oe_list_handle:after {
+    content: counter(line-counter);
+    counter-increment: line-counter;
+
+    position: absolute;
+    top: 2px;
+    left: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #999;
+}
+

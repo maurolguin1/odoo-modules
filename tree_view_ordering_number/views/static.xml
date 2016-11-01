@@ -1,0 +1,14 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <data>
+        <template id="tree_view_ordering_number_css" name="tree_view_ordering_number.css" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/tree_view_ordering_number/static/css/tree_view_ordering_number.css" />
+            </xpath>
+        </template>
+    </data>
+</openerp>
