@@ -11,7 +11,7 @@ class StockProductionLot(models.Model):
     @api.model
     def create(self, vals):
         # If we create a serial from picking operation
-        if self.env.context.get('default_picking_type_id', False):
+        if self.env.context.get('active_model', None) == 'stock.picking':
             product_id = vals.get('product_id', False)
             product = self.env['product.product'].browse(product_id)
 
