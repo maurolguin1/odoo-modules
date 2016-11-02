@@ -3,28 +3,19 @@
  * License MIT (https://opensource.org/licenses/mit-license.php)
  */
 
-table.oe_list_content tbody.ui-sortable {
+
+/***************************************************************************************************************
+                                                                                        List view in VIEW mode */
+
+.o_list_view table.oe_list_content {
     counter-reset: line-counter;
 }
 
-table.oe_list_content tbody.ui-sortable td.oe_list_field_handle {
+.o_list_view table.oe_list_content td.oe_list_field_handle {
     position: relative;
-    height: 40px;
 }
 
-table.oe_list_content tbody.ui-sortable td.oe_list_field_handle .oe_list_handle:before {
-    content: "\f047";
-
-    position: absolute;
-    left: 9px;
-    top: 50%;
-    margin-top: 2px;
-
-    font-size: 10px;
-    color: #ccc;
-}
-
-table.oe_list_content tbody.ui-sortable td.oe_list_field_handle .oe_list_handle:after {
+.o_list_view table.oe_list_content tbody:not(.ui-sortable) td.oe_list_field_handle:after {
     content: counter(line-counter);
     counter-increment: line-counter;
 
@@ -37,3 +28,35 @@ table.oe_list_content tbody.ui-sortable td.oe_list_field_handle .oe_list_handle:
     color: #666;
 }
 
+
+/***************************************************************************************************************
+                                                                                        List view in EDIT mode */
+
+.o_list_view table.oe_list_content tbody.ui-sortable td.oe_list_field_handle {
+    height: 40px;
+}
+
+.o_list_view table.oe_list_content tbody.ui-sortable td.oe_list_field_handle .oe_list_handle:before {
+    content: "\f047";
+
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    margin-top: 2px;
+
+    font-size: 10px;
+    color: #ccc;
+}
+
+.o_list_view table.oe_list_content tbody.ui-sortable td.oe_list_field_handle .oe_list_handle:after {
+    content: counter(line-counter);
+    counter-increment: line-counter;
+
+    position: absolute;
+    top: 2px;
+    left: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
