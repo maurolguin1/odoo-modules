@@ -1,0 +1,70 @@
+<section class="oe_container">
+    <div class="oe_row">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Sale Order Line Quantity Recompute</h2>
+            <h3 class="oe_slogan">Recompute sale quantity to approch real delivery quantity</h3>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_mt32">
+    <div class="oe_row">
+        <div class="oe_span12">
+            <p>
+                Let starting with the following context: we want to buy product by unit,
+                we want to manage product inventory by unit but we want to sell it by SQM
+                and unit cannot be divide. The UOM settings for this context could be:
+            </p>
+
+            <ul>
+                <li>
+                    Unit:
+                    <ul>
+                        <li>Type: Smaller than the reference Unit of Measure</li>
+                        <li>Rounding Precision: 1.00000</li>
+                        <li>Ratio: 3.861003861</li>
+                    </ul>
+                </li>
+                <li>
+                    SQM:
+                    <ul>
+                        <li>Type: Reference Unit of Measure for this category</li>
+                        <li>Rounding Precision: 0.00100</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>
+                And the following settings for product:
+            </p>
+
+            <ul>
+                <li>Unit of Measure: Unit</li>
+                <li>Purchase Unit of Measure: Unit</li>
+            </ul>
+
+            <p class="text-justify oe_mt32">
+                When the seller change UOM for use SQM and sell <strong>43 SQM</strong> ;
+                it means we will charge <strong>43 * 4.6 = 166.02316602 unit</strong>.
+                But in fact as we setup the unit price with a rounding precision of <strong>1.0</strong> ;
+                167 piece will be send to the client.
+            </p>
+
+            <p class="text-justify">
+                This module try to reduce the loss by recomputing the surface (SQM) seized by the seller
+                to approach as close as possible to the real surface that will be delivered to the client.
+            </p>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<section class="oe_container oe_mt32">
+    <div class="oe_row">
+        <div class="oe_span12 text-center">
+            <p>Copyright 2016 Critech Limited <a href="mailto:contact@critech-services.com">contact@critech-services.com</a></p>
+            <p><img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000" alt="MIT License" /></p>
+        </div>
+    </div>
+</section>
