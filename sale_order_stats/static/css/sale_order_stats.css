@@ -3,6 +3,32 @@
  * License MIT (https://opensource.org/licenses/mit-license.php)
  */
 
+
+
+/***************************************************************************************************************
+                                                                                                   Box Layout */
+ 
+.openerp .oe_application .sale_order_stats .oe_form_sheet {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.openerp .oe_application .sale_order_stats .oe_form_sheet > div {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    margin: 0 10px;
+}
+
+
+/***************************************************************************************************************
+                                                                                                 Visual style */
+
 .openerp .oe_application .sale_order_stats {
     box-shadow: none;
     border-bottom-width: 0;
@@ -15,23 +41,20 @@
 }
 
 .openerp .oe_application .sale_order_stats .oe_form_sheet div {
-    display: inline-block;
     text-align: center;
     font-size: 19px;
-    width: 21%;
-    margin: 0 2%;
     padding: 10px 0;
     background: url('/web/static/src/img/form_sheetbg.png');
 }
 
-.openerp .oe_application .sale_order_stats .oe_form_sheet div label {
+.openerp .oe_application .sale_order_stats .oe_form_sheet label {
     display: block;
     font-size: 13px;
     font-weight: normal;
     color: #999;
 }
 
-.openerp .oe_application .sale_order_stats .oe_form_sheet div span {
+.openerp .oe_application .sale_order_stats .oe_form_sheet span {
     display: inline;
     font-weight: bold;
 }

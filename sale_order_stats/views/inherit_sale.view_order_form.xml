@@ -36,6 +36,16 @@
                         </div>
 
                         <div>
+                            <label for="x_discount_amount" />
+                            <field readonly="1" name="x_discount_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        </div>
+
+                        <div>
+                            <label for="x_discount_rate" />
+                            <field readonly="1" name="x_discount_rate" /> %
+                        </div>
+
+                        <div>
                             <label for="x_margin_amount" />
                             <field readonly="1" name="x_margin_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
                         </div>
