@@ -1,0 +1,14 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <data>
+        <template id="united_backend_theme_extra" name="united_backend_theme_extra.css" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/united_backend_theme_extra/static/css/united_backend_theme_extra.css" />
+            </xpath>
+        </template>
+    </data>
+</openerp>

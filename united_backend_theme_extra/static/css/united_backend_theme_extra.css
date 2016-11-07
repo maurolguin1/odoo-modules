@@ -1,0 +1,14 @@
+/**
+ * Copyright 2016 Critech Limited (contact@critech-services.com)
+ * License MIT (https://opensource.org/licenses/mit-license.php)
+ */
+
+
+.openerp .oe_application .oe_form_sheetbg {
+    padding-bottom: 40px;
+}
+
+
+ul.nav-tabs {
+    margin-top: 30px;
+}
