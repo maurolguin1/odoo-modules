@@ -11,7 +11,9 @@
     'version': '9.0.1.0.0',
     'license': 'Other OSI approved licence',
     'depends': [
-        'sale'
+        'base',
+        'sale',
+        'decimal_precision',
     ],
     'data': [
         'security/ir.model.access.csv',

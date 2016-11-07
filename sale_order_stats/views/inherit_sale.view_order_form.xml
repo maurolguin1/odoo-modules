@@ -35,12 +35,12 @@
                             <field readonly="1" name="x_amount_untaxed" widget="monetary" options="{'currency_field': 'currency_id'}"/>
                         </div>
 
-                        <div>
+                        <div groups="sale.group_discount_per_so_line">
                             <label for="x_discount_amount" />
                             <field readonly="1" name="x_discount_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
                         </div>
 
-                        <div>
+                        <div groups="sale.group_discount_per_so_line">
                             <label for="x_discount_rate" />
                             <field readonly="1" name="x_discount_rate" /> %
                         </div>
