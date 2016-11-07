@@ -3,12 +3,23 @@
  * License MIT (https://opensource.org/licenses/mit-license.php)
  */
 
-
-.openerp .oe_application .oe_form_sheetbg {
-    padding-bottom: 40px;
-}
-
-
 ul.nav-tabs {
     margin-top: 30px;
+}
+
+/* Improve end of page visibility with a margin in bottom of page */
+.openerp .oe_application .oe_formview,
+.openerp .oe_application .o_kanban_view,
+.openerp .oe_application .o_list_view {
+    margin-bottom: 30px;
+}
+
+.openerp .oe_application .o_calendar_view .fc-widget-header + div > div {
+    margin-bottom: 10px;
+}
+
+/* Increase size of title */
+.openerp .oe_formview .oe_button_box + .oe_avatar + .oe_title {
+    width: auto;
+    margin-right: 450px;
 }
