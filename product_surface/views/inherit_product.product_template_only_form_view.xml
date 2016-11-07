@@ -1,0 +1,21 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <data>
+        <record id="product_surface_product_template" model="ir.ui.view">
+            <field name="name">product_surface.product_template</field>
+            <field name="model">product.template</field>
+            <field name="priority">100</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view" />
+
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='width']" position="after">
+                    <field name="surface" readonly="0" attrs="{'invisible': ['|', ('type', 'not in', ['product', 'consu']), ('product_variant_count', '>=', 1)]}" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

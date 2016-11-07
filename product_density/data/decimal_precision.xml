@@ -1,0 +1,13 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <data noupdate="1">
+        <record forcecreate="True" id="decimal_density" model="decimal.precision">
+            <field name="name">Density</field>
+            <field name="digits">2</field>
+        </record>
+    </data>
+</openerp>
