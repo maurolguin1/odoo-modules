@@ -1,0 +1,29 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <data>
+        <record id="sale_order_line_discount_compute_view_order_line_tree" model="ir.ui.view">
+            <field name="name">sale_order_line_discount_compute.view_order_line_tree</field>
+            <field name="model">sale.order</field>
+            <field name="priority">100</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+
+            <field name="arch" type="xml">
+                <xpath expr="//tree//field[@name='discount']" position="attributes">
+                    <attribute name="readonly">True</attribute>
+                </xpath>
+
+                <xpath expr="//tree//field[@name='price_unit']" position="attributes">
+                    <attribute name="invisible">True</attribute>
+                </xpath>
+
+                <xpath expr="//tree//field[@name='price_unit']" position="after">
+                    <field name="x_price_unit" attrs="{'readonly': [('qty_invoiced', '&gt;', 0)]}" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
