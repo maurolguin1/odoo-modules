@@ -23,3 +23,8 @@ ul.nav-tabs {
     width: auto;
     margin-right: 450px;
 }
+
+/* Nested Group */
+.openerp .oe_form .oe_form_group_cell[colspan="2"] .oe_form_group {
+    margin: 0;
+}
