@@ -12,6 +12,7 @@
     'license': 'Other OSI approved licence',
     'depends': [
         'base',
+        'product',
         'stock',
     ],
     'external_dependencies': {
