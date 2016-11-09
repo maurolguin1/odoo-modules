@@ -13,7 +13,9 @@
 
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='uom_po_id']" position="after">
-                    <field name="uom_so_id" groups="product.group_uom" />
+                    <field name="uom_so_id"
+                           groups="product.group_uom"
+                    />
                 </xpath>
             </field>
         </record>
