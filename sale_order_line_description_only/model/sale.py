@@ -11,29 +11,10 @@ class SaleOrderLine(models.Model):
     @api.multi
     @api.onchange('product_id')
     def product_id_change(self):
-        if not self.product_id:
-            return {'domain': {'product_uom': []}}
+        result = super(SaleOrderLine, self).product_id_change()
 
-        vals = {}
-        domain = {'product_uom': [('category_id', '=', self.product_id.uom_id.category_id.id)]}
+        if self.product_id:
+            if self.product_id.description_sale:
+                self.update({'name': self.product_id.description_sale})
 
-        if not self.product_uom or (self.product_id.uom_id.category_id.id != self.product_uom.category_id.id):
-            vals['product_uom'] = self.product_id.uom_id
-
-        product = self.product_id.with_context(
-            lang=self.order_id.partner_id.lang,
-            partner=self.order_id.partner_id.id,
-            quantity=self.product_uom_qty,
-            date=self.order_id.date_order,
-            pricelist=self.order_id.pricelist_id.id,
-            uom=self.product_uom.id
-        )
-
-        if product.description_sale:
-            vals['name'] = product.description_sale
-        else:
-            vals['name'] = product.name_get()[0][1]
-
-        self.update(vals)
-
-        return {'domain': domain}
+        return result

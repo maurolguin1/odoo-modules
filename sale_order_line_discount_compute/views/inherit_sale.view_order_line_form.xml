@@ -21,7 +21,7 @@
                 </xpath>
 
                 <xpath expr="//form//field[@name='price_unit']" position="after">
-                    <field name="x_price_unit" />
+                    <field name="x_price_unit" attrs="{'readonly': [('qty_invoiced', '&gt;', 0)]}" />
                 </xpath>
             </field>
         </record>
