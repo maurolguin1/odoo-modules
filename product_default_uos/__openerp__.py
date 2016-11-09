@@ -3,8 +3,8 @@
 # License MIT (https://opensource.org/licenses/mit-license.php)
 
 {
-    'name': 'Product Unit of Sale',
-    'summary': 'Ability to set unit of measure used to sell product',
+    'name': 'Product Default Unit of Sale',
+    'summary': 'Ability to set a default unit of measure used for sell product',
     'author': 'Critech Limited',
     'website': 'http://www.critech-services.com',
     'category': 'Sales Management',

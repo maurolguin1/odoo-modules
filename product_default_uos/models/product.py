@@ -9,7 +9,7 @@ from openerp.exceptions import ValidationError
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
-    uom_so_id = fields.Many2one(string='Sale Unit of Measure', comodel_name='product.uom', required=True)
+    uom_so_id = fields.Many2one(string='Default Sale Unit', comodel_name='product.uom', required=True)
 
     @api.constrains('uom_id', 'uom_so_id')
     def _check_uom_so(self):

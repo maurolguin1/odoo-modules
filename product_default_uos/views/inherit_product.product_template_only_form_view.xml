@@ -5,8 +5,8 @@
 
 <openerp>
     <data>
-        <record id="product_unit_of_sell_product_template" model="ir.ui.view">
-            <field name="name">product_unit_of_sell.product_template</field>
+        <record id="product_default_uos_product_template" model="ir.ui.view">
+            <field name="name">product_default_uos.product_template</field>
             <field name="model">product.template</field>
             <field name="priority">100</field>
             <field name="inherit_id" ref="product.product_template_only_form_view" />
