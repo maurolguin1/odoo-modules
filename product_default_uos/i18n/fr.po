@@ -1,0 +1,33 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_default_uos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20160726\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-10 07:24+0000\n"
+"PO-Revision-Date: 2016-11-10 15:25+0800\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: fr\n"
+"X-Generator: Poedit 1.8.9\n"
+
+#. module: product_default_uos
+#: model:ir.model.fields,field_description:product_default_uos.field_product_template_uom_so_id
+msgid "Default Sale Unit of Measure"
+msgstr "Unité de mesure de vente par défaut"
+
+#. module: product_default_uos
+#: model:ir.model,name:product_default_uos.model_product_template
+msgid "Product Template"
+msgstr "Modèle d'article"
+
+#. module: product_default_uos
+#: model:ir.model,name:product_default_uos.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Ligne de bons de commande"
