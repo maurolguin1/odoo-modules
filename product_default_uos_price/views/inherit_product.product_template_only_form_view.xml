@@ -5,54 +5,56 @@
 
 <openerp>
     <data>
-        <record id="product_default_uos_product_template" model="ir.ui.view">
-            <field name="name">product_default_uos.product_template</field>
+        <record id="product_template" model="ir.ui.view">
+            <field name="name">product_default_uos_price.product_template</field>
             <field name="model">product.template</field>
             <field name="inherit_id" ref="product.product_template_only_form_view" />
 
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='list_price']" position="after">
-                    <label for="uom_so_list_price" groups="product.group_uom" />
+                    <label for="uom_so_list_price" />
 
-                    <div name="uom_so_list_price" groups="product.group_uom">
-                        <field name="uom_so_list_price"
-                               class="oe_inline"
-                               nolabel="1"
-                               widget='monetary'
-                               options="{'currency_field': 'currency_id'}"
-                               readonly="True"
-                        />
-
-                        <span style="margin: 0 5px">/</span>
-
-                        <field name="uom_so_list_price_uom"
-                               class="oe_inline"
-                               nolabel="1"
-                               readonly="True"
-                        />
+                    <div name="uom_so_list_price">
+                        <field name="uom_so_list_price" class="oe_inline" nolabel="1" readonly="True" widget="monetary" options="{'currency_field': 'currency_id'}" />
+                        <span class="cost_per_unit_separator" />
+                        <field name="uom_so_list_price_uom" class="oe_inline" nolabel="1" readonly="True" />
                     </div>
                 </xpath>
 
                 <xpath expr="//div[@name='standard_price_uom']" position="after">
-                    <label for="uom_so_standard_price" groups="product.group_uom" />
+                    <label for="uom_so_standard_price" />
 
-                    <div name="uom_so_standard_price" groups="product.group_uom">
-                        <field name="uom_so_standard_price"
-                               class="oe_inline"
-                               nolabel="1"
-                               widget='monetary'
-                               options="{'currency_field': 'currency_id'}"
-                               readonly="True"
-                        />
-
-                        <span style="margin: 0 5px">/</span>
-
-                        <field name="uom_so_standard_price_uom"
-                               class="oe_inline"
-                               nolabel="1"
-                               readonly="True"
-                        />
+                    <div name="uom_so_standard_price">
+                        <field name="uom_so_standard_price" class="oe_inline" nolabel="1" readonly="True" widget="monetary" options="{'currency_field': 'currency_id'}" />
+                        <span class="cost_per_unit_separator" />
+                        <field name="uom_so_standard_price_uom" class="oe_inline" nolabel="1" readonly="True" />
                     </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_template_rules" model="ir.ui.view">
+            <field name="name">product_default_uos_price.product_template.rules</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product_default_uos_price.product_template" />
+
+            <field name="arch" type="xml">
+                <xpath expr="//label[@for='uom_so_list_price']" position="attributes">
+                    <attribute name="groups">product.group_uom</attribute>
+                </xpath>
+
+                <xpath expr="//div[@name='uom_so_list_price']" position="attributes">
+                    <attribute name="groups">product.group_uom</attribute>
+                </xpath>
+
+                <xpath expr="//label[@for='uom_so_standard_price']" position="attributes">
+                    <attribute name="groups">base.group_user, product.group_uom</attribute>
+                    <attribute name="attrs">{'invisible': [('product_variant_count', '>', 1)]}</attribute>
+                </xpath>
+
+                <xpath expr="//div[@name='uom_so_standard_price']" position="attributes">
+                    <attribute name="groups">base.group_user, product.group_uom</attribute>
+                    <attribute name="attrs">{'invisible': [('product_variant_count', '>', 1)]}</attribute>
                 </xpath>
             </field>
         </record>

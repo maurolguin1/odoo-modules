@@ -5,8 +5,8 @@
 
 <openerp>
     <data>
-        <record id="product_density_product" model="ir.ui.view">
-            <field name="name">product_density.product</field>
+        <record id="product_product" model="ir.ui.view">
+            <field name="name">product_density.product_product</field>
             <field name="model">product.product</field>
             <field name="priority">100</field>
             <field name="inherit_id" ref="product_surface.product_surface_product" />

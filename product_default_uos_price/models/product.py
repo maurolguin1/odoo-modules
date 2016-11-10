@@ -68,7 +68,7 @@ class ProductTemplate(models.Model):
                 )
 
     @api.multi
-    @api.depends('uom_so_id', 'uom_id', 'list_price')
+    @api.depends('uom_so_id', 'uom_id', 'list_price', 'lst_price')
     def _compute_uom_so_list_price(self):
         for record in self:
             if not record.uom_so_id or not record.uom_id or record.uom_so_id == record.uom_id:

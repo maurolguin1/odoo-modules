@@ -1,0 +1,14 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <data>
+        <template id="product_default_uos_price_css" name="product_default_uos_price.css" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/product_default_uos_price/static/css/product_default_uos_price.css" />
+            </xpath>
+        </template>
+    </data>
+</openerp>

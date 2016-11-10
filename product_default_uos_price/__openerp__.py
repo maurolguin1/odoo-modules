@@ -18,6 +18,7 @@
     ],
     'data': [
         'views/inherit_product.product_template_only_form_view.xml',
+        'views/static.xml',
     ],
     'installable': True,
     'application': False,
