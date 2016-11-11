@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 9.0c-20160726\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-10 08:00+0000\n"
-"PO-Revision-Date: 2016-11-10 08:00+0000\n"
+"POT-Creation-Date: 2016-11-11 17:54+0000\n"
+"PO-Revision-Date: 2016-11-11 17:54+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,44 +16,48 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: sale_order_stats
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_x_cost_subtotal
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_cost_subtotal
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_cost_subtotal
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_cost_subtotal
 msgid "Cost subtotal"
 msgstr ""
 
 #. module: sale_order_stats
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_discount_amount
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_discount_amount
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_discount_amount
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_discount_amount
 msgid "Discount amount"
 msgstr ""
 
 #. module: sale_order_stats
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_discount_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_discount_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_discount_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_discount_rate
 msgid "Discount rate"
 msgstr ""
 
 #. module: sale_order_stats
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_x_margin_amount
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_margin_amount
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_x_margin_amount
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_margin_amount
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_margin_amount
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_margin_amount
 msgid "Margin amount"
 msgstr ""
 
 #. module: sale_order_stats
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_x_margin_rate
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_margin_rate
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_x_margin_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_margin_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_margin_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_margin_rate
 msgid "Margin rate"
 msgstr ""
 
 #. module: sale_order_stats
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_x_markup_rate
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_x_markup_rate
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_x_markup_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_markup_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_markup_rate
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_report_markup_rate
 msgid "Markup rate"
 msgstr ""
 
 #. module: sale_order_stats
-#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_x_purchase_price
+#: model:ir.model.fields,field_description:sale_order_stats.field_sale_order_line_purchase_price
 msgid "Purchase price"
 msgstr ""
 

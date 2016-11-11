@@ -13,19 +13,19 @@
 
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='order_line']/form//field[@name='price_unit']" position="after">
-                    <field name="x_purchase_price" groups="base.group_user" invisible="True" />
-                    <field name="x_cost_subtotal" groups="base.group_user" invisible="True" />
-                    <field name="x_margin_amount" groups="base.group_user" invisible="True" />
-                    <field name="x_margin_rate" groups="base.group_user" invisible="True" />
-                    <field name="x_markup_rate" groups="base.group_user" invisible="True" />
+                    <field name="purchase_price" groups="base.group_user" invisible="True" />
+                    <field name="cost_subtotal" groups="base.group_user" invisible="True" />
+                    <field name="margin_amount" groups="base.group_user" invisible="True" />
+                    <field name="margin_rate" groups="base.group_user" invisible="True" />
+                    <field name="markup_rate" groups="base.group_user" invisible="True" />
                 </xpath>
 
                 <xpath expr="//field[@name='order_line']/tree//field[@name='price_unit']" position="after">
-                    <field name="x_purchase_price" groups="base.group_user" invisible="True" />
-                    <field name="x_cost_subtotal" groups="base.group_user" invisible="True" />
-                    <field name="x_margin_amount" groups="base.group_user" invisible="True" />
-                    <field name="x_margin_rate" groups="base.group_user" invisible="True" />
-                    <field name="x_markup_rate" groups="base.group_user" invisible="True" />
+                    <field name="purchase_price" groups="base.group_user" invisible="True" />
+                    <field name="cost_subtotal" groups="base.group_user" invisible="True" />
+                    <field name="margin_amount" groups="base.group_user" invisible="True" />
+                    <field name="margin_rate" groups="base.group_user" invisible="True" />
+                    <field name="markup_rate" groups="base.group_user" invisible="True" />
                 </xpath>
 
                 <xpath expr="//sheet" position="before">
@@ -36,28 +36,28 @@
                         </div>
 
                         <div groups="sale.group_discount_per_so_line">
-                            <label for="x_discount_amount" />
-                            <field readonly="1" name="x_discount_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <label for="discount_amount" />
+                            <field readonly="1" name="discount_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
                         </div>
 
                         <div groups="sale.group_discount_per_so_line">
-                            <label for="x_discount_rate" />
-                            <field readonly="1" name="x_discount_rate" /> %
+                            <label for="discount_rate" />
+                            <field readonly="1" name="discount_rate" /> %
                         </div>
 
                         <div>
-                            <label for="x_margin_amount" />
-                            <field readonly="1" name="x_margin_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            <label for="margin_amount" />
+                            <field readonly="1" name="margin_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
                         </div>
 
                         <div>
-                            <label for="x_margin_rate" />
-                            <field readonly="1" name="x_margin_rate" /> %
+                            <label for="margin_rate" />
+                            <field readonly="1" name="margin_rate" /> %
                         </div>
 
                         <div>
-                            <label for="x_markup_rate" />
-                            <field readonly="1" name="x_markup_rate" /> %
+                            <label for="markup_rate" />
+                            <field readonly="1" name="markup_rate" /> %
                         </div>
                     </sheet>
                 </xpath>
