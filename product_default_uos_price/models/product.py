@@ -34,11 +34,10 @@ class ProductTemplate(models.Model):
             if not record.uom_so_id or not record.uom_po_id or record.uom_so_id == record.uom_po_id:
                 record.standard_price = record.uom_so_standard_price
             else:
-                record.standard_price = record.uom_so_standard_price * self.env['product.uom']._compute_qty_obj(
-                    from_unit=record.uom_po_id,
-                    qty=1,
-                    to_unit=record.uom_so_id,
-                    round=False
+                record.standard_price = self.env['product.uom']._compute_price(
+                    record.uom_so_id.id,
+                    record.uom_so_standard_price,
+                    record.uom_po_id.id
                 )
 
     @api.multi
@@ -48,11 +47,10 @@ class ProductTemplate(models.Model):
             if not record.uom_so_id or not record.uom_po_id or record.uom_so_id == record.uom_po_id:
                 record.uom_so_standard_price = record.standard_price
             else:
-                record.uom_so_standard_price = record.standard_price / self.env['product.uom']._compute_qty_obj(
-                    from_unit=record.uom_po_id,
-                    qty=1,
-                    to_unit=record.uom_so_id,
-                    round=False
+                record.uom_so_standard_price = self.env['product.uom']._compute_price(
+                    record.uom_po_id.id,
+                    record.standard_price,
+                    record.uom_so_id.id
                 )
 
     @api.multi
@@ -62,11 +60,10 @@ class ProductTemplate(models.Model):
             if not record.uom_so_id or not record.uom_po_id or record.uom_so_id == record.uom_po_id:
                 record.list_price = record.uom_so_list_price
             else:
-                record.list_price = record.uom_so_list_price * self.env['product.uom']._compute_qty_obj(
-                    from_unit=record.uom_id,
-                    qty=1,
-                    to_unit=record.uom_so_id,
-                    round=False
+                record.list_price = self.env['product.uom']._compute_price(
+                    record.uom_so_id.id,
+                    record.uom_so_list_price,
+                    record.uom_po_id.id
                 )
 
     @api.multi
@@ -76,9 +73,8 @@ class ProductTemplate(models.Model):
             if not record.uom_so_id or not record.uom_id or record.uom_so_id == record.uom_id:
                 record.uom_so_list_price = record.list_price
             else:
-                record.uom_so_list_price = record.list_price / self.env['product.uom']._compute_qty_obj(
-                    from_unit=record.uom_id,
-                    qty=1,
-                    to_unit=record.uom_so_id,
-                    round=False
+                record.uom_so_list_price = self.env['product.uom']._compute_price(
+                    record.uom_po_id.id,
+                    record.list_price,
+                    record.uom_so_id.id
                 )
