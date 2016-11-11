@@ -28,6 +28,7 @@ class ProductTemplate(models.Model):
     )
 
     @api.multi
+    @api.onchange('uom_so_standard_price')
     def _inverse_uom_so_standard_price(self):
         for record in self:
             if not record.uom_so_id or not record.uom_po_id or record.uom_so_id == record.uom_po_id:
@@ -55,6 +56,7 @@ class ProductTemplate(models.Model):
                 )
 
     @api.multi
+    @api.onchange('uom_so_list_price')
     def _inverse_uom_so_list_price(self):
         for record in self:
             if not record.uom_so_id or not record.uom_po_id or record.uom_so_id == record.uom_po_id:

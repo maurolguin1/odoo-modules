@@ -13,7 +13,15 @@ class SaleOrderLine(models.Model):
     def product_id_change(self):
         result = super(SaleOrderLine, self).product_id_change()
 
-        if self.product_id and self.product_id.uom_so_id:
-            self.update({'product_uom': self.product_id.uom_so_id})
+        if self.product_id and self.product_id.uom_so_id and self.product_id != self.product_id.uom_so_id:
+            self.update({
+                'product_uom': self.product_id.uom_so_id,
+                'price_unit': self.env['product.uom']._compute_price(
+                    self.product_id.uom_po_id.id,
+                    self.price_unit,
+                    self.product_id.uom_so_id.id
+                )
+            })
 
         return result
+
