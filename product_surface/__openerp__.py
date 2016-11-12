@@ -18,8 +18,8 @@
     ],
     'data': [
         'data/decimal_precision.xml',
-        'views/inherit_product.product_normal_form_view.xml',
-        'views/inherit_product.product_template_only_form_view.xml',
+        'views/inherit_product_dimension.product_normal_form_view.xml',
+        'views/inherit_product_dimension.product_template_only_form_view.xml',
     ],
     'installable': True,
     'application': False,

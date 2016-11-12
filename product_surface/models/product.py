@@ -12,10 +12,16 @@ class Product(models.Model):
     surface = fields.Float(string='Surface', compute='_compute_surface', store=True, digits=dp.get_precision('Surface'))
 
     @api.multi
-    @api.depends('order_line.x_cost_subtotal')
-    def _compute_cost_subtotal(self):
+    @api.depends('length', 'width', 'dimensional_uom_id')
+    def _compute_surface(self):
         for record in self:
-            record.x_cost_subtotal = sum(line.x_cost_subtotal for line in record.order_line)
+            if not record.length or not record.width or not record.dimensional_uom_id:
+                return False
+
+            length_m = self.convert_to_meters(record.length, record.dimensional_uom_id)
+            width_m = self.convert_to_meters(record.width, record.dimensional_uom_id)
+
+            record.surface = length_m * width_m
 
 
 class ProductTemplate(models.Model):

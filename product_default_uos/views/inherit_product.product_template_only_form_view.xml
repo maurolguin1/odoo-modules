@@ -8,7 +8,6 @@
         <record id="product_template" model="ir.ui.view">
             <field name="name">product_default_uos.product_template</field>
             <field name="model">product.template</field>
-            <field name="priority">100</field>
             <field name="inherit_id" ref="product.product_template_only_form_view" />
 
             <field name="arch" type="xml">

@@ -8,11 +8,10 @@
         <record id="product_product" model="ir.ui.view">
             <field name="name">product_density.product_product</field>
             <field name="model">product.product</field>
-            <field name="priority">100</field>
             <field name="inherit_id" ref="product.product_normal_form_view" />
 
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='volume']" position="after">
+                <xpath expr="//group[@name='group_lots_and_weight']" position="inside">
                     <field name="density" attrs="{'invisible': [('type', 'not in', ['product', 'consu'])]}" />
                 </xpath>
             </field>

@@ -6,7 +6,7 @@
 Product Name Reference
 ======================
 
-With this module, method name_get is overrided for only return the product reference.
+With this module, method name_get is override for only return the product reference.
 
 For details, customization or feedback please contact us: contact@critech-services.com
 

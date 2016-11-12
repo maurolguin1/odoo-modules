@@ -5,11 +5,10 @@
 
 <openerp>
     <data>
-        <record id="stock_picking_nomenclature_res_config_serial_view" model="ir.ui.view">
-            <field name="name">stock_picking_nomenclature.res_config_serial_view</field>
+        <record id="stock_config_settings_serial" model="ir.ui.view">
+            <field name="name">stock_picking_nomenclature.stock_config_settings_serial</field>
             <field name="model">stock.config.settings</field>
-            <field name="priority">101</field>
-            <field name="inherit_id" ref="stock_picking_nomenclature_res_config_lot_view" />
+            <field name="inherit_id" ref="stock_picking_nomenclature.stock_config_settings_lots" />
 
             <field name="arch" type="xml">
                 <xpath expr="//group[@name='stock_picking_nomenclature_lot']" position="after">
@@ -34,11 +33,10 @@
             </field>
         </record>
 
-        <record id="stock_picking_nomenclature_res_config_serial_view_rules" model="ir.ui.view">
-            <field name="name">stock_picking_nomenclature.res_config_serial_view.rules</field>
+        <record id="stock_config_settings_serial_rules" model="ir.ui.view">
+            <field name="name">stock_picking_nomenclature.stock_config_settings_serial.rules</field>
             <field name="model">stock.config.settings</field>
-            <field name="priority">101</field>
-            <field name="inherit_id" ref="stock_picking_nomenclature_res_config_serial_view" />
+            <field name="inherit_id" ref="stock_picking_nomenclature.stock_config_settings_serial" />
 
             <field name="arch" type="xml">
                 <xpath expr="//group[@name='stock_picking_nomenclature_serial']" position="attributes">

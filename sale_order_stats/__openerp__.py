@@ -16,7 +16,6 @@
         'decimal_precision',
     ],
     'data': [
-        'security/ir.model.access.csv',
         'views/inherit_sale.view_order_form.xml',
         'views/inherit_sale.view_res_config.xml',
         'views/static.xml',

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 9.0c-20160726\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-01 12:40+0000\n"
-"PO-Revision-Date: 2016-11-01 12:40+0000\n"
+"POT-Creation-Date: 2016-11-12 18:21+0000\n"
+"PO-Revision-Date: 2016-11-12 18:21+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,12 +21,12 @@ msgid "Lot/Serial"
 msgstr ""
 
 #. module: stock_picking_nomenclature
-#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_lot_view
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_config_settings_lots
 msgid "Picking Nomenclature : Lot name"
 msgstr ""
 
 #. module: stock_picking_nomenclature
-#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_serial_view
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_config_settings_serial
 msgid "Picking Nomenclature : Serial number"
 msgstr ""
 
@@ -43,8 +43,8 @@ msgid "Sequence code to use"
 msgstr ""
 
 #. module: stock_picking_nomenclature
-#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_lot_view
-#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_serial_view
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_config_settings_lots
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_config_settings_serial
 msgid "Sequence code to use for the suffix"
 msgstr ""
 
@@ -59,20 +59,20 @@ msgid "Suffix sequence"
 msgstr ""
 
 #. module: stock_picking_nomenclature
-#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_lot_view
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_config_settings_lots
 msgid "Use %(vendor)s for supplier internal reference <br/>\n"
 "                                Use %(product)s for product code"
 msgstr ""
 
 #. module: stock_picking_nomenclature
-#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_serial_view
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_config_settings_serial
 msgid "Use %(vendor)s for supplier internal reference <br/>\n"
 "                                Use %(product)s for product code <br/>\n"
 "                                Use %(sequence)s for sequence number"
 msgstr ""
 
 #. module: stock_picking_nomenclature
-#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_picking_nomenclature_res_config_lot_view
+#: model:ir.ui.view,arch_db:stock_picking_nomenclature.stock_config_settings_lots
 msgid "Use a sequence as a lot name suffix"
 msgstr ""
 

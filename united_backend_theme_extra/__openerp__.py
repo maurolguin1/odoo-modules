@@ -15,7 +15,7 @@
         'united_backend_theme',
     ],
     'data': [
-        'views/styles.xml',
+        'views/static.xml',
     ],
     'installable': True,
     'auto_install': True,

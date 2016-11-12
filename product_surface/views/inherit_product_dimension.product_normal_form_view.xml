@@ -8,8 +8,7 @@
         <record id="product_product" model="ir.ui.view">
             <field name="name">product_surface.product_product</field>
             <field name="model">product.product</field>
-            <field name="priority">100</field>
-            <field name="inherit_id" ref="product.product_normal_form_view" />
+            <field name="inherit_id" ref="product_dimension.product_normal_form_view" />
 
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='width']" position="after">

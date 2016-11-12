@@ -23,7 +23,7 @@ msgid "Customer Comment"
 msgstr "Commentaire client"
 
 #. module: sale_order_customer_comment
-#: model:ir.ui.view,arch_db:sale_order_customer_comment.sale_order_customer_comment_view_order_form
+#: model:ir.ui.view,arch_db:sale_order_customer_comment.sale_order_form
 msgid "Customer Notes"
 msgstr "Remarques client"
 

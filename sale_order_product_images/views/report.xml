@@ -4,7 +4,7 @@
 -->
 
 <openerp>
-    <template id="report_saleorder_document_image" inherit_id="sale.report_saleorder_document">
+    <template id="report_saleorder_product_image" inherit_id="sale.report_saleorder_document">
         <xpath expr="//th[1]" position="before">
             <th></th>
         </xpath>
