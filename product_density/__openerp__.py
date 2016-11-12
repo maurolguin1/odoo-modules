@@ -13,13 +13,12 @@
     'depends': [
         'base',
         'product',
-        'product_surface',
         'decimal_precision',
     ],
     'data': [
         'data/decimal_precision.xml',
-        'views/inherit_product_surface.product_surface_product.xml',
-        'views/inherit_product_surface.product_surface_product_template.xml',
+        'views/inherit_product.product_normal_form_view.xml',
+        'views/inherit_product.product_template_only_form_view.xml',
     ],
     'installable': True,
     'application': False,

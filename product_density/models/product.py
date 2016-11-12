@@ -11,12 +11,12 @@ class ProductTemplate(models.Model):
 
     density = fields.Float(string='Density', digits=dp.get_precision('Density'))
 
-    @api.onchange('surface', 'density')
+    @api.onchange('density', 'volume')
     def _compute_weight(self):
-        if not self.surface or not self.density:
+        if not self.volume or not self.density:
             return False
 
-        self.weight = self.surface * self.density
+        self.weight = self.volume * self.density
 
 
 class Product(models.Model):
@@ -24,9 +24,9 @@ class Product(models.Model):
 
     density = fields.Float(string='Density', digits=dp.get_precision('Density'))
 
-    @api.onchange('surface', 'density')
+    @api.onchange('density', 'volume')
     def _compute_weight(self):
-        if not self.surface or not self.density:
+        if not self.volume or not self.density:
             return False
 
-        self.weight = self.surface * self.density
+        self.weight = self.volume * self.density
