@@ -1,0 +1,47 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* product_supplierinfo_uos_price
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c-20160726\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-13 17:08+0000\n"
+"PO-Revision-Date: 2016-11-13 17:08+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_supplierinfo_uos_price
+#: model:ir.model.fields,field_description:product_supplierinfo_uos_price.field_product_supplierinfo_product_uom_so_id
+msgid "Default Sale Unit of Measure"
+msgstr ""
+
+#. module: product_supplierinfo_uos_price
+#: model:ir.model.fields,help:product_supplierinfo_uos_price.field_product_supplierinfo_product_uom_po_id
+msgid "Default Unit of Measure used for purchase orders. It must be in the same category than the default unit of measure."
+msgstr ""
+
+#. module: product_supplierinfo_uos_price
+#: model:ir.model,name:product_supplierinfo_uos_price.model_product_supplierinfo
+msgid "Information about a product vendor"
+msgstr ""
+
+#. module: product_supplierinfo_uos_price
+#: model:ir.model.fields,field_description:product_supplierinfo_uos_price.field_product_supplierinfo_uom_so_price
+msgid "Price (UoS)"
+msgstr ""
+
+#. module: product_supplierinfo_uos_price
+#: model:ir.model.fields,field_description:product_supplierinfo_uos_price.field_product_supplierinfo_product_uom_equal
+msgid "Product uom equal"
+msgstr ""
+
+#. module: product_supplierinfo_uos_price
+#: model:ir.model.fields,field_description:product_supplierinfo_uos_price.field_product_supplierinfo_product_uom_po_id
+msgid "Purchase Unit of Measure"
+msgstr ""
+

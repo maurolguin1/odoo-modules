@@ -1,0 +1,51 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <data>
+        <record id="product_supplierinfo_form" model="ir.ui.view">
+            <field name="name">product_supplierinfo_uos_price.product_supplierinfo_form</field>
+            <field name="model">product.supplierinfo</field>
+            <field name="inherit_id" ref="product.product_supplierinfo_form_view" />
+
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='price']/.." position="after">
+                    <field name="product_uom_so_id" invisible="True" />
+                    <field name="product_uom_po_id" invisible="True" />
+                    <field name="product_uom_equal" invisible="True" />
+
+                    <field name="uom_so_price"
+                           options="{
+                                'unit': {
+                                    'separator': '/',
+                                    'field': 'product_uom_so_id',
+                                    'model': 'product.uom',
+                                    'model_label': 'display_name'
+                                },
+                           }"
+                    />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_supplierinfo_form_rules" model="ir.ui.view">
+            <field name="name">product_supplierinfo_uos_price.product_supplierinfo_form.rules</field>
+            <field name="model">product.supplierinfo</field>
+            <field name="inherit_id" ref="product_supplierinfo_uos_price.product_supplierinfo_form" />
+
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='uom_so_price']" position="attributes">
+                    <attribute name="attrs">
+                        {
+                            'invisible': [
+                                ('product_uom_equal', '=', True)
+                            ]
+                        }
+                    </attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
