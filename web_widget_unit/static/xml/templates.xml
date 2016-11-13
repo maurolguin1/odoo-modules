@@ -8,7 +8,7 @@
         <t t-jquery="t:last" t-operation="after">
             <t t-if="(widget.options.unit and widget.options.unit.text) or widget.get('unit')">
                 <span>
-                    <span class="unit-separator"><t t-esc="(widget.options.unit and widget.options.unit.separator) or ' / '" /></span>
+                    <span class="unit-separator"><t t-esc="(widget.options.unit and widget.options.unit.separator) or ''" /></span>
                     <span class="unit-label"><t t-esc="(widget.options.unit and widget.options.unit.text) or widget.get('unit')" /></span>
                 </span>
             </t>
@@ -28,7 +28,7 @@
 
             <t t-if="(widget.options.unit and widget.options.unit.text) or widget.get('unit')">
                 <span>
-                    <span class="unit-separator"><t t-esc="(widget.options.unit and widget.options.unit.separator) or ' / '" /></span>
+                    <span class="unit-separator"><t t-esc="(widget.options.unit and widget.options.unit.separator) or ''" /></span>
                     <span class="unit-label"><t t-esc="(widget.options.unit and widget.options.unit.text) or widget.get('unit')" /></span>
                 </span>
             </t>
