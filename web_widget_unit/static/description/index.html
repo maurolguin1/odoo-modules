@@ -1,0 +1,85 @@
+<section class="oe_container">
+    <div class="oe_row">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Web Widget Unit</h2>
+            <h3 class="oe_slogan">New widget option for display field with unit like price per sqm</h3>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_mt32">
+    <div class="oe_row">
+        <div class="oe_span6">
+            <p class="text-justify">
+                This module add new widget options for display field with unit like
+                volume field, weight field, price per unit, etc.
+            </p>
+            <p class="text-justify">
+                It work with field unit like <code>product_uom</code> or
+                width static unit provided by a simple string value.
+            </p>
+        </div>
+        <div class="oe_span6">
+            <div class="oe_bg_img">
+                <a href="/web_widget_unit/static/description/widget.png" target="_blank">
+                    <img src="widget.png" class="img-thumbnail oe_screenshot center-block" />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<section class="oe_container oe_mt32">
+    <div class="oe_row">
+        <div class="oe_span12 oe_mb32">
+            <h2>Usage</h2>
+        </div>
+        <div class="oe_span6">
+            <h4>Use with static string unit</h4>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #1e90ff; font-weight: bold">&lt;field</span> <span style="color: #1e90ff">name=</span><span style="color: #aa5500">&quot;weight&quot;</span>
+       <span style="color: #1e90ff">options=</span><span style="color: #aa5500">&quot;{</span>
+<span style="color: #aa5500">            &#39;currency_field&#39;: &#39;currency_id&#39;,</span>
+<span style="color: #aa5500">            &#39;unit&#39;: {</span>
+<span style="color: #aa5500">                &#39;text&#39;: &#39;kg&#39;,</span>
+<span style="color: #aa5500">                &#39;separator&#39;: &#39; / &#39;</span>
+<span style="color: #aa5500">            },</span>
+<span style="color: #aa5500">       }&quot;</span>
+<span style="color: #1e90ff; font-weight: bold">/&gt;</span>
+</pre>
+            </div>
+        </div>
+
+        <div class="oe_span6">
+            <h4>Use with field unit</h4>
+            <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #1e90ff; font-weight: bold">&lt;field</span> <span style="color: #1e90ff">name=</span><span style="color: #aa5500">&quot;uom_so_list_price&quot;</span>
+       <span style="color: #1e90ff">widget=</span><span style="color: #aa5500">&quot;monetary&quot;</span>
+       <span style="color: #1e90ff">options=</span><span style="color: #aa5500">&quot;{</span>
+<span style="color: #aa5500">            &#39;currency_field&#39;: &#39;currency_id&#39;,</span>
+<span style="color: #aa5500">            &#39;unit&#39;: {</span>
+<span style="color: #aa5500">                &#39;field&#39;: &#39;uom_so_id&#39;,</span>
+<span style="color: #aa5500">                &#39;model&#39;: &#39;product.uom&#39;,</span>
+<span style="color: #aa5500">                &#39;model_label&#39;: &#39;display_name&#39;,</span>
+<span style="color: #aa5500">                &#39;separator&#39;: &#39; / &#39;</span>
+<span style="color: #aa5500">            },</span>
+<span style="color: #aa5500">       }&quot;</span>
+<span style="color: #1e90ff; font-weight: bold">/&gt;</span>
+</pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<section class="oe_container oe_mt32">
+    <div class="oe_row">
+        <div class="oe_span12 text-center">
+            <p>Copyright 2016 Critech Limited <a href="mailto:contact@critech-services.com">contact@critech-services.com</a></p>
+            <p><img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000" alt="MIT License" /></p>
+        </div>
+    </div>
+</section>

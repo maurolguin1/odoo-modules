@@ -1,0 +1,37 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<templates>
+    <t t-name="FieldCharWithUnit" t-extend="FieldChar">
+        <t t-jquery="t:last" t-operation="after">
+            <t t-if="(widget.options.unit and widget.options.unit.text) or widget.get('unit')">
+                <span>
+                    <span class="unit-separator"><t t-esc="(widget.options.unit and widget.options.unit.separator) or ' / '" /></span>
+                    <span class="unit-label"><t t-esc="(widget.options.unit and widget.options.unit.text) or widget.get('unit')" /></span>
+                </span>
+            </t>
+        </t>
+    </t>
+
+    <t t-name="FieldMonetaryWithUnit" t-extend="FieldChar">
+        <t t-jquery="t:first" t-operation="before">
+            <t t-if="widget.get('currency_info') and widget.get('currency_info').position === 'before'">
+                <span><t t-esc="widget.get('currency_info').symbol" /></span>
+            </t>
+        </t>
+        <t t-jquery="t:last" t-operation="after">
+            <t t-if="widget.get('currency_info') and widget.get('currency_info').position === 'after'">
+                <span><t t-esc="widget.get('currency_info').symbol" /></span>
+            </t>
+
+            <t t-if="(widget.options.unit and widget.options.unit.text) or widget.get('unit')">
+                <span>
+                    <span class="unit-separator"><t t-esc="(widget.options.unit and widget.options.unit.separator) or ' / '" /></span>
+                    <span class="unit-label"><t t-esc="(widget.options.unit and widget.options.unit.text) or widget.get('unit')" /></span>
+                </span>
+            </t>
+        </t>
+    </t>
+</templates>
