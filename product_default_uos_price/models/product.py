@@ -9,7 +9,6 @@ from openerp.addons import decimal_precision as dp
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
-    uom_so_standard_price_uom = fields.Many2one(related='uom_so_id', readonly=True)
     uom_so_standard_price = fields.Float(
         string='Cost (UoS)',
         compute='_compute_uom_so_standard_price',
@@ -18,7 +17,6 @@ class ProductTemplate(models.Model):
         store=True,
     )
 
-    uom_so_list_price_uom = fields.Many2one(related='uom_so_id', readonly=True)
     uom_so_list_price = fields.Float(
         string='Sale price (UoS)',
         compute='_compute_uom_so_list_price',

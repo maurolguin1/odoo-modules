@@ -23,12 +23,6 @@ msgid "Cost (UoS)"
 msgstr "Coût (UdV)"
 
 #. module: product_default_uos_price
-#: model:ir.model.fields,field_description:product_default_uos_price.field_product_template_uom_so_list_price_uom
-#: model:ir.model.fields,field_description:product_default_uos_price.field_product_template_uom_so_standard_price_uom
-msgid "Default Sale Unit of Measure"
-msgstr "Unité de mesure de vente par défaut"
-
-#. module: product_default_uos_price
 #: model:ir.model,name:product_default_uos_price.model_product_template
 msgid "Product Template"
 msgstr "Modèle d'article"

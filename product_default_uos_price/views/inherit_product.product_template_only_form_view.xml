@@ -12,23 +12,31 @@
 
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='list_price']" position="after">
-                    <label for="uom_so_list_price" />
-
-                    <div name="uom_so_list_price">
-                        <field name="uom_so_list_price" class="oe_inline" nolabel="1" readonly="True" widget="monetary" options="{'currency_field': 'currency_id'}" />
-                        <span class="cost_per_unit_separator" />
-                        <field name="uom_so_list_price_uom" class="oe_inline" nolabel="1" readonly="True" />
-                    </div>
+                    <field name="uom_so_list_price"
+                           widget="monetary"
+                           options="{
+                                'currency_field': 'currency_id',
+                                'unit': {
+                                    'field': 'uom_so_id',
+                                    'model': 'product.uom',
+                                    'model_label': 'display_name'
+                                },
+                           }"
+                    />
                 </xpath>
 
                 <xpath expr="//div[@name='standard_price_uom']" position="after">
-                    <label for="uom_so_standard_price" />
-
-                    <div name="uom_so_standard_price">
-                        <field name="uom_so_standard_price" class="oe_inline" nolabel="1" readonly="True" widget="monetary" options="{'currency_field': 'currency_id'}" />
-                        <span class="cost_per_unit_separator" />
-                        <field name="uom_so_standard_price_uom" class="oe_inline" nolabel="1" readonly="True" />
-                    </div>
+                    <field name="uom_so_standard_price"
+                           widget="monetary"
+                           options="{
+                                'currency_field': 'currency_id',
+                                'unit': {
+                                    'field': 'uom_so_id',
+                                    'model': 'product.uom',
+                                    'model_label': 'display_name'
+                                },
+                           }"
+                    />
                 </xpath>
             </field>
         </record>
@@ -39,20 +47,11 @@
             <field name="inherit_id" ref="product_default_uos_price.product_template" />
 
             <field name="arch" type="xml">
-                <xpath expr="//label[@for='uom_so_list_price']" position="attributes">
+                <xpath expr="//field[@name='uom_so_list_price']" position="attributes">
                     <attribute name="groups">product.group_uom</attribute>
                 </xpath>
 
-                <xpath expr="//div[@name='uom_so_list_price']" position="attributes">
-                    <attribute name="groups">product.group_uom</attribute>
-                </xpath>
-
-                <xpath expr="//label[@for='uom_so_standard_price']" position="attributes">
-                    <attribute name="groups">base.group_user, product.group_uom</attribute>
-                    <attribute name="attrs">{'invisible': [('product_variant_count', '>', 1)]}</attribute>
-                </xpath>
-
-                <xpath expr="//div[@name='uom_so_standard_price']" position="attributes">
+                <xpath expr="//field[@name='uom_so_standard_price']" position="attributes">
                     <attribute name="groups">base.group_user, product.group_uom</attribute>
                     <attribute name="attrs">{'invisible': [('product_variant_count', '>', 1)]}</attribute>
                 </xpath>
