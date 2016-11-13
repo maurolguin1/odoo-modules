@@ -1,0 +1,13 @@
+<!--
+    Copyright 2016 Critech Limited (contact@critech-services.com)
+    License MIT (https://opensource.org/licenses/mit-license.php)
+-->
+
+<openerp>
+    <data noupdate="1">
+        <record forcecreate="True" id="decimal_volume" model="decimal.precision">
+            <field name="name">Volume</field>
+            <field name="digits">3</field>
+        </record>
+    </data>
+</openerp>
