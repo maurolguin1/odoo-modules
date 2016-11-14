@@ -7,7 +7,7 @@
     'summary': 'This module add extra styles to United Backend Theme',
     'author': 'Critech Limited',
     'website': 'http://www.critech-services.com',
-    'category': 'Specific Module',
+    'category': 'Web',
     'version': '9.0.1.0.0',
     'license': 'Other OSI approved licence',
     'depends': [

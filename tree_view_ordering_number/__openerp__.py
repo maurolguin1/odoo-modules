@@ -7,7 +7,7 @@
     'summary': 'Change handle icon and display line number in Tree View with sequence ordering enabled',
     'author': 'Critech Limited',
     'website': 'http://www.critech-services.com',
-    'category': 'Extra Tools',
+    'category': 'Web',
     'version': '9.0.1.0.0',
     'license': 'Other OSI approved licence',
     'depends': [

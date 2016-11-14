@@ -7,7 +7,7 @@
     'summary': 'Add to the product template a button to access to Product Margins wizard provide by product_margin module.',
     'author': 'Critech Limited',
     'website': 'http://www.critech-services.com',
-    'category': 'Sales Management',
+    'category': 'Product',
     'version': '9.0.1.0.0',
     'license': 'Other OSI approved licence',
     'depends': [

@@ -7,7 +7,7 @@
     'summary': 'Add decimal precision configuration to product volume',
     'author': 'Critech Limited',
     'website': 'http://www.critech-services.com',
-    'category': 'Others',
+    'category': 'Product',
     'version': '9.0.1.0.0',
     'license': 'Other OSI approved licence',
     'depends': [

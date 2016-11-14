@@ -7,7 +7,7 @@
     'summary': 'Add surface to products ; based on width and length from product_dimension',
     'author': 'Critech Limited',
     'website': 'http://www.critech-services.com',
-    'category': 'Sales Management',
+    'category': 'Product',
     'version': '9.0.1.0.0',
     'license': 'Other OSI approved licence',
     'depends': [
