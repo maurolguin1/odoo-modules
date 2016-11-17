@@ -11,13 +11,13 @@
             <field name="inherit_id" ref="sale.view_order_form" />
 
             <field name="arch" type="xml">
-                <notebook position="inside">
+                <xpath expr="//notebook" position="inside">
                     <page name="customer_notes" string="Customer Notes">
                         <group>
                             <field name="customer_comment" />
                         </group>
                     </page>
-                </notebook>
+                </xpath>
             </field>
         </record>
     </data>
